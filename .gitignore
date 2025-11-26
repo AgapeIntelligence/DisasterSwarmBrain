@@ -1,0 +1,54 @@
+# Python / PyTorch
+__pycache__/
+*.py[cod:od]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+# TorchScript / exported models
+*.pt
+*.pth
+*.zip
+exports/
+models/
+checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.tmp
+*.bak
+*.csv
+*.npz
+*.npy
+*.wav
+
+# Build / dist
+build/
+dist/
+*.egg-info/
