@@ -1,0 +1,21 @@
+[package]
+name = "phase_kernel_rust"
+version = "0.1.0"
+edition = "2021"
+description = "38 µs real-time phase extractor for DisasterSwarmBrain — Rust core"
+license = "MIT"
+repository = "https://github.com/AgapeIntelligence/DisasterSwarmBrain"
+keywords = ["dsp", "phase", "rescue", "swarm", "real-time"]
+categories = ["science", "algorithms", "embedded"]
+
+[dependencies]
+rustfft = "6.2"
+realfft = "3.3"
+num-complex = "0.4"
+
+[profile.release]
+opt-level = "z"     # smallest binary
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
